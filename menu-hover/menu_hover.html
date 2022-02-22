@@ -1,0 +1,181 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+       *{
+           margin: 0%;
+           padding: 0%;
+           box-sizing: border-box;
+       }
+
+       video
+       {
+           position: fixed;
+           object-fit: cover;
+           height: 100%;
+           width: 100%;
+           z-index: -1;
+       }
+       .menu
+       {
+         
+           height: 50px;
+           display: flex;
+           background-color: rgba(0, 0, 0, 0.8);
+           justify-content: flex-end;
+       }
+     
+       .menu >div
+       {
+        
+           height: 100%;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 30px;
+           border-left: 3px solid red;
+           font-style: oblique;
+           font-weight: 1000;
+       }
+       .menu >div:last-child
+       {
+           border-right: 3px solid red;
+       }
+       a
+       {
+           text-decoration: none;
+           color: white;
+           height: 100%;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           position: relative;
+           box-sizing: border-box;
+       }
+       a span
+       {
+           height: 100%;
+           width: 25%;
+           background-color: yellowgreen; 
+           box-shadow:0 0 60px yellowgreen;
+           position: absolute;
+           z-index: -1;
+           transform-origin: top;
+           transform: scaleY(0);
+           transition: transform .5s ;
+       }
+       a:hover span
+       {
+           transform: scaleY(1);
+           transform-origin: bottom;
+       }
+       a span:nth-child(1)
+       {
+         left: 0;
+         transition-delay: 0;
+       }
+       a span:nth-child(2)
+       {
+         left: 25%;
+         transition-delay: 0.15s;
+       }
+       a span:nth-child(3)
+       {
+         left: 50%;
+         transition-delay: 0.30s;
+       }
+       a span:nth-child(4)
+       {
+         left: 75%;
+         transition-delay: 0.45s;
+       }
+   h1
+   {
+       color: white;
+   }
+   @media  all and (max-width:800px)
+{
+    .menu
+{
+flex-direction: column;
+height: auto;
+justify-content: center;
+}
+a
+{
+    width: 100%;
+}
+.menu >div:last-child
+{
+    border-right: none;
+}
+}
+
+
+
+   </style>
+</head>
+<body>
+    <video src="Rain - 78.mp4" muted loop autoplay></video>
+    <div class="menu">
+      
+       <div>
+           <a href="#">Home
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+           </a>
+      </div>
+       <div>
+           <a href="#">About
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           </a>
+        </div>
+       <div>
+           <a href="#">Services
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           </a>
+        </div>
+       <div>
+           <a href="#">Team
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           </a>
+        </div>
+       <div>
+           <a href="#">Protfolio
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           </a>
+        </div>
+       <div>
+           <a href="#">Contact
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
