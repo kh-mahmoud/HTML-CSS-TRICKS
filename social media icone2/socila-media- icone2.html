@@ -1,0 +1,105 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+ body
+ {
+     margin: 0px;
+     padding: 0px;
+     background-color: gray;
+ }
+ .all
+ {
+     position: absolute;
+     top: 45%;
+     text-align: center;
+     width: 100%;
+ }
+
+.btn
+{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: silver;
+    border-radius: 30%;
+    color: rgb(69, 127, 236);
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i
+{
+    font-size: 30px;
+   margin-top: 28px;
+   transition: 0.2s linear;
+}
+
+.btn:hover i
+{
+transform: scale(2);
+color: white;
+}
+.btn::before
+{
+    content: "";
+  height: 120%;
+  width: 120%;
+  background-color: #3498db;
+  position: absolute;
+  transform: rotate(45deg);
+  left: -100;
+  top: 90;
+}
+
+.btn:hover::before
+{
+    animation: aaa 0.7s 1;
+    left: -100;
+  top: 90;
+}
+@keyframes aaa{
+    0%{
+        left: -100;
+        top: 90;
+    }50%{
+        left: 10%;
+        top: -30;
+    }100%{
+        left: -100;
+         top: 90;
+    }
+}
+
+
+
+
+
+  </style>  
+</head>
+<body>
+    <div class="all">
+        <a class="btn" href="#">
+            <i class="fa fa-facebook" aria-hidden="true"style="color: rgb(64, 64, 247);"></i>
+        </a>
+        <a class="btn" href="#">
+            <i class="fa fa-twitter" aria-hidden="true" style="color: rgb(83, 141, 248);"></i>
+        </a>
+   
+    
+        <a class="btn" href="#">
+            <i class="fa fa-instagram" aria-hidden="true" style="color: crimson;"></i>
+        </a>
+    
+    
+        <a class="btn" href="#">
+            <i class="fa fa-github" aria-hidden="true" style="color: darkgrey;"></i>
+        </a>
+   
+    
+        <a class="btn" href="#">
+            <i class="fa fa-youtube-play" aria-hidden="true" style="color: red;"></i>
+        </a>
+    </div>
+</body>
