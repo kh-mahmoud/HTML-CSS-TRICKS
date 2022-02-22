@@ -1,0 +1,109 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *
+        {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+    body
+    {
+        place-items:center;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+    }    
+     .drop
+     {
+         float: left;
+         background-color: white;
+         height: 60px;
+         width: 60px;
+         border-radius:50px;   
+         cursor: pointer; 
+         transition: all 0.3s ease-out; 
+         margin: 5px;
+         overflow: hidden;
+         }
+         .drop:hover
+         {
+             width: 200px;
+             display:flex;
+            
+         }
+     .icone
+     {
+         height: 60px;
+         width: 60px;
+         border-radius: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .icone>i
+     {
+        font-size: 25px;
+        transform: scale(2);
+     }
+     span
+     {
+         line-height: 60px;
+         font-size: 25px;
+         margin-left: 10px;
+     }
+   
+      .fb
+      {
+          color: rgb(64, 64, 226);
+      }
+      .tw
+      {
+          color: rgb(10, 198, 204);
+      }   
+      .ins
+      {
+         color: crimson;
+      }
+      .gr
+      {
+       color:rgb(56, 56, 56) ;
+      }
+      .you
+      {
+         color: red;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+      <div class="drop">
+        <div class="icone" style="background-color: rgb(64, 64, 226);"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        <span class="fb">Facebook</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: rgb(10, 198, 204);"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <span class="tw">Twitter</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: crimson;"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        <span class="ins">Instagram</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: rgb(56, 56, 56);"><i class="fa fa-github" aria-hidden="true"></i></div>
+        <span class="gr">Github</span>
+      </div>
+      <div class="drop">
+        <div class="icone" style="background: red;"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+        <span class="you">Youtube</span>
+      </div>
+      
+    </div>
+
+
+
+
+
+</body>
