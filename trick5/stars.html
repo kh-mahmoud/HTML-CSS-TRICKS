@@ -1,0 +1,159 @@
+<head>
+    <style>
+     *
+     {
+         margin: 0%;
+         padding: 0%;
+         box-sizing: border-box;
+     }
+     body
+     {
+         overflow: hidden;
+     }
+     section
+     {
+         height: 100%;
+         width: 100%;
+         background-image: url(l.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+ 
+     }
+     span
+     {
+         position: absolute;
+         top: 20%;
+         right: 46%;
+         width: 4px;
+         height: 4px;
+         border-radius: 50%;
+         filter: brightness(10px);
+         background-color: #fff;
+         box-shadow: 0 0 0 4px rgba(255,255, 255, 0.1),
+         0 0 0 8px rgba(255,255, 255, 0.1),
+         0 0 20px rgba(255,255, 255, 1) ;
+         transform: translateY(-50px);
+         animation: a 3s linear infinite;
+     }
+     @keyframes a
+     {
+         0%
+         {
+             transform: rotate(315deg)translateX(0);
+             opacity: 1;
+         }
+         50%
+         {
+             opacity: 0;
+         }
+         100%
+         {
+            transform: rotate(315deg)translateX(-1000px);
+            opacity: 0;
+         }
+     }
+     span:nth-child(1)
+     {
+         top: 0%;
+         left: initial;
+         right: 20%;
+         animation-delay: 0s;
+     }
+     span:nth-child(2)
+     {
+         top: 10%;
+         right: 30%;
+         left:initial;
+         animation-delay: 0s;
+         animation-duration: 5s;
+     }
+     span:nth-child(3)
+     {
+         top: 40%;
+         right: 60%;
+         left:initial;
+         animation-delay: 0s;
+         animation-duration: 5s;
+     }
+     span:nth-child(4)
+     {
+         top: 0px;
+         right: 100px;
+         left:initial;
+         animation-delay: 0s;
+         animation-duration: 5s;
+     }
+     span:nth-child(5)
+     {
+         top: 0px;
+         right: 600px;
+         left:initial;
+         animation-delay: 0s;
+         animation-duration: 5s;
+     }
+     span:nth-child(6)
+     {
+         top: 300px;
+         right: 20px;
+         left:initial;
+         animation-delay: 0s;
+         animation-duration: 2s;
+     }
+     span:nth-child(7)
+     {
+         top: 0px;
+         right: 100px;
+         left:initial;
+         animation-delay: 1.75s;
+         animation-duration: 1.8s;
+     }
+     span:nth-child(8)
+     {
+         top: 40px;
+         right: 200px;
+         left:initial;
+         animation-delay: 0.6s;
+         animation-duration: 3s;
+     }
+     span:nth-child(9)
+     {
+         top: 10px;
+         right: 150px;
+         left:initial;
+         animation-delay: 0.6s;
+         animation-duration: 1.3s;
+     }
+     span:nth-child(10)
+     {
+         top: 15px;
+         right: 220px;
+         left:initial;
+         animation-delay: 1s;
+         animation-duration: 1.75s;
+     }
+     span::before
+     {
+         content: "";
+         position: absolute;
+         top: 20%;
+         width: 300px;
+         height: 1px;
+         background: linear-gradient(90deg,#fff,transparent);
+     }
+    </style>
+</head>
+<body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </section>
+</body>
