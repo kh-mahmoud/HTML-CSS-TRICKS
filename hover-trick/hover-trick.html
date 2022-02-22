@@ -1,0 +1,79 @@
+<head>
+    <style>
+       *
+       {
+           margin: 0%;
+           padding: 0%;
+       }
+       body
+       {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: #101626;  
+       }
+       .all
+       {
+           position: relative;
+           width: 800px;
+           height: 500px;
+           background-color: rgba(0, 0, 0, 0.5);
+           transition: 0.5s ease-in-out;
+       }
+       .clip
+       {
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           transition: 0.5s ease-in-out;
+           left: 0%;
+           top: 0%;
+       }
+       .clip1
+       {
+        clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+          background-image: url(407469.jpg);
+          background-size: cover;
+          
+       }
+       .clip2
+       {
+        clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+        background-image: url(1102586.jpg);
+        background-size: cover;
+       }
+       .clip3
+       {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+        background-image: url(1014884.jpg);
+        background-size: cover;
+       }
+ 
+       .all:hover .clip
+       {
+        clip-path: polygon(100% 0, 100% 100%, 100% 100%);
+        transition: 0.5s ease-in-out;
+       }
+       .all:hover .clip:hover
+       {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: 0.5s ease-in-out;
+       }
+  
+      
+  
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="clip clip1"></div>
+    <div class="clip clip2"></div>
+    <div class="clip clip3"></div>
+
+</div>
+
+
+
+    
+</body>
